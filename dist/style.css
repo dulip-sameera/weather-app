@@ -1,0 +1,110 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Variables */
+:root {
+  --font-clr: #fff;
+  --container-bg-clr: linear-gradient(180deg, #6047d9 0%, #4bc0d4 64.58%);
+  --input-box-bg-clr: rgba(151, 240, 255, 0.52);
+  --placeholder-clr: #fff;
+}
+
+/* set default styles for all elements*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+/* container */
+.container {
+  position: relative;
+  gap: 1rem;
+  background: var(--container-bg-clr);
+  min-height: 100vh;
+}
+
+/* input city search */
+.city-search {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  color: var(--font-clr);
+  background-color: var(--input-box-bg-clr);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  height: 1.25rem;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+}
+
+.city-search::placeholder {
+  color: var(--font-clr);
+}
+
+/* main */
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* box */
+.box {
+  color: var(--font-clr);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+/* box head */
+.head {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/* box head weather-condition */
+.weather-condition {
+  position: absolute;
+  top: -15px;
+  left: 5px;
+}
+
+/* box head location */
+.head .location {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* box body */
+.body {
+  display: flex;
+  gap: 3rem;
+}
+
+/* box body current temp */
+.current-temp {
+  font-size: 7.5rem;
+}
+
+.current-temp sup {
+  font-size: 3rem;
+}
+
+/* box body vertical bar */
+.vertical-bar {
+  border-left: 3px solid var(--font-clr);
+  height: 10rem;
+}
+
+/* box body more temp */
+.more-temp {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
