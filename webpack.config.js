@@ -17,7 +17,7 @@ module.exports = {
       hash: true,
       title: "Weather App",
       template: "./src/index.html",
-      filename: "./dist/index.html",
+      filename: "./index.html",
     }),
   ],
 };
