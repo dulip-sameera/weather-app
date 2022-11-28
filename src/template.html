@@ -4,7 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <input
+        type="text"
+        id="city_search"
+        class="city-search"
+        placeholder="Search city"
+      />
+      <div class="main">
+        <div class="box">
+          <div class="head">
+            <div class="weather-condition" id="weather-condition"></div>
+            <div class="location">
+              <span id="city"></span>,
+              <span id="country"></span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="current-temp" id="current_temp"></div>
+            <div class="vertical-bar"></div>
+            <div class="more-temp">
+              <div>
+                <span>FEELS LIKE: </span>
+                <span id="feels_like"> </span>
+              </div>
+              <div>
+                <span>WIND: </span>
+                <span id="wind"></span>
+              </div>
+              <div>
+                <span>HUMIDITY: </span>
+                <span id="humidity"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
