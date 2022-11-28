@@ -16,7 +16,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       title: "Weather App",
-      template: "./src/index.html",
+      template: "./src/template.html",
       filename: "./index.html",
     }),
   ],
